@@ -4,7 +4,24 @@
       "Bash(bash *)",
       "Bash(git init *)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(npx create-vite@latest . -- --template react-ts --force)",
+      "Bash(npx create-vite@latest . -- --template react-ts)",
+      "Bash(npx --yes create-vite@latest . --template react-ts)",
+      "Bash(mkdir -p /tmp/personal_backup)",
+      "Bash(mv docs *)",
+      "Bash(npx create-vite@latest . --template react-ts)",
+      "Bash(npm init *)",
+      "Bash(npm install *)",
+      "Read(//tmp/personal_backup/**)",
+      "Read(//tmp/**)",
+      "Bash(cp -r /tmp/personal_backup/.git F:/Codes/personal/.git)",
+      "Bash(cp -r /tmp/personal_backup/docs F:/Codes/personal/docs)",
+      "Bash(cp -r /tmp/personal_backup/.superpowers F:/Codes/personal/.superpowers)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(kill %1)",
+      "Bash(pkill -f \"vite\")"
     ]
   }
 }
