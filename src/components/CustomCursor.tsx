@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react'
-import { motion, useMotionValue, useSpring } from 'framer-motion'
+import { motion, useMotionValue } from 'framer-motion'
 
 export default function CustomCursor() {
   const [isHovering, setIsHovering] = useState(false)
-  const cursorX = useMotionValue(0)
-  const cursorY = useMotionValue(0)
-  const springX = useSpring(cursorX, { stiffness: 300, damping: 28 })
-  const springY = useSpring(cursorY, { stiffness: 300, damping: 28 })
+  const cursorX = useMotionValue(-100)
+  const cursorY = useMotionValue(-100)
 
   useEffect(() => {
     const move = (e: MouseEvent) => {
@@ -17,10 +15,12 @@ export default function CustomCursor() {
     const over = () => setIsHovering(true)
     const out = () => setIsHovering(false)
 
-    window.addEventListener('mousemove', move)
+    window.addEventListener('mousemove', move, { passive: true })
 
     const attachHover = () => {
       document.querySelectorAll('a, button, [data-cursor-hover]').forEach(el => {
+        el.removeEventListener('mouseenter', over)
+        el.removeEventListener('mouseleave', out)
         el.addEventListener('mouseenter', over)
         el.addEventListener('mouseleave', out)
       })
@@ -38,27 +38,25 @@ export default function CustomCursor() {
         el.removeEventListener('mouseleave', out)
       })
     }
-  }, [cursorX, cursorY])
+  }, []) // 空依赖，只在挂载时绑定一次
 
   return (
     <motion.div
-      className="fixed top-0 left-0 pointer-events-none z-[9999] rounded-full border border-text-primary/30"
+      className="fixed top-0 left-0 pointer-events-none z-[9999] rounded-full border border-[#0a0a0a]"
       style={{
-        x: springX,
-        y: springY,
+        x: cursorX,
+        y: cursorY,
         translateX: '-50%',
         translateY: '-50%',
-        width: isHovering ? 32 : 12,
-        height: isHovering ? 32 : 12,
-        background: isHovering ? 'transparent' : '#ffffff',
-        mixBlendMode: 'difference',
+        width: isHovering ? 36 : 14,
+        height: isHovering ? 36 : 14,
+        background: isHovering ? 'transparent' : 'transparent',
       }}
       animate={{
-        width: isHovering ? 32 : 12,
-        height: isHovering ? 32 : 12,
-        background: isHovering ? 'transparent' : '#ffffff',
+        width: isHovering ? 36 : 14,
+        height: isHovering ? 36 : 14,
       }}
-      transition={{ duration: 0.2 }}
+      transition={{ duration: 0.15 }}
     />
   )
 }

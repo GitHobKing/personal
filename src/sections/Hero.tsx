@@ -71,21 +71,23 @@ export default function Hero() {
       ref={containerRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-bg cursor-none px-4"
     >
-      {/* 颜色反转圆 - z=20，只影响英文和背景 */}
+      {/* 颜色反转圆 - zIndex 20，只影响英文和背景 */}
       <div
-        className="rounded-full bg-white pointer-events-none z-20"
+        className="rounded-full bg-white pointer-events-none"
         style={{
           ...invertStyle,
+          zIndex: 20,
           mixBlendMode: 'difference' as React.CSSProperties['mixBlendMode'],
         }}
       />
 
-      {/* 中文揭示层 - z=25，深色背景遮盖英文，位于反转圆之上 */}
+      {/* 中文揭示层 - zIndex 25，深色背景遮盖英文，位于反转圆之上 */}
       <div
-        className="absolute inset-0 flex flex-col items-center justify-center text-center z-25 pointer-events-none"
+        className="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none"
         style={{
           clipPath,
           background: '#121212',
+          zIndex: 25,
         }}
       >
         <div className="font-fangsong text-[clamp(36px,11vw,96px)] font-semibold text-white tracking-[2px] leading-none mb-9 whitespace-nowrap">
