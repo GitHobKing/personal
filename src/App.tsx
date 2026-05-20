@@ -1,4 +1,4 @@
-import CustomCursor from './components/CustomCursor'
+import AnimatedBackground from './components/AnimatedBackground'
 import ScrollProgress from './components/ScrollProgress'
 import Navigation from './components/Navigation'
 import Hero from './sections/Hero'
@@ -9,8 +9,8 @@ import Contact from './sections/Contact'
 
 function App() {
   return (
-    <main className="min-h-screen bg-bg">
-      <CustomCursor />
+    <main className="min-h-screen relative">
+      <AnimatedBackground />
       <ScrollProgress />
       <Navigation />
       <Hero />

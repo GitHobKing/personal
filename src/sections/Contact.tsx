@@ -37,7 +37,7 @@ const contacts = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="min-h-screen flex flex-col items-center justify-center bg-bg py-20 text-center">
+    <section id="contact" className="min-h-screen flex flex-col items-center justify-center py-20 text-center">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

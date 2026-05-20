@@ -36,7 +36,7 @@ const careers: CareerItem[] = [
 
 export default function Career() {
   return (
-    <section id="career" className="min-h-screen flex flex-col items-center justify-center bg-bg py-20">
+    <section id="career" className="min-h-screen flex flex-col items-center justify-center py-20">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

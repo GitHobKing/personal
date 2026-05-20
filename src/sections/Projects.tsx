@@ -87,7 +87,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
 export default function Projects() {
   return (
-    <section id="projects" className="min-h-screen flex flex-col items-center justify-center bg-bg py-20">
+    <section id="projects" className="min-h-screen flex flex-col items-center justify-center py-20">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
