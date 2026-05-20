@@ -44,7 +44,7 @@ export default function Career() {
         transition={{ duration: 0.5 }}
         className="text-center mb-12"
       >
-        <h2 className="font-mono text-[51px] font-bold text-text-primary tracking-[-1px]">
+        <h2 className="font-mono text-[clamp(32px,8vw,51px)] font-bold text-text-primary tracking-[-1px]">
           Career
         </h2>
         <div className="w-10 h-px bg-[#ccc] mx-auto mt-[18px]" />

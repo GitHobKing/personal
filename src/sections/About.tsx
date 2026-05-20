@@ -89,20 +89,20 @@ export default function About() {
         transition={{ duration: 0.5 }}
         className="text-center mb-12"
       >
-        <h2 className="font-mono text-[51px] font-bold text-text-primary tracking-[-1px]">
+        <h2 className="font-mono text-[clamp(32px,8vw,51px)] font-bold text-text-primary tracking-[-1px]">
           Professional Skills
         </h2>
         <div className="w-10 h-px bg-[#ccc] mx-auto mt-[18px]" />
       </motion.div>
 
       {/* 上行 2 个 */}
-      <div className="flex justify-center gap-[60px] mb-[60px] flex-wrap">
+      <div className="flex justify-center gap-[30px] sm:gap-[60px] mb-[30px] sm:mb-[60px] flex-wrap">
         {skills.slice(0, 2).map((s, i) => (
           <FlipCard key={s.label} skill={s} index={i} />
         ))}
       </div>
       {/* 下行 3 个 */}
-      <div className="flex justify-center gap-[60px] flex-wrap">
+      <div className="flex justify-center gap-[30px] sm:gap-[60px] flex-wrap">
         {skills.slice(2, 5).map((s, i) => (
           <FlipCard key={s.label} skill={s} index={i + 2} />
         ))}

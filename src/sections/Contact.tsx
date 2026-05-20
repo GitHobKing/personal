@@ -45,7 +45,7 @@ export default function Contact() {
         transition={{ duration: 0.5 }}
         className="text-center mb-10"
       >
-        <h2 className="font-mono text-[51px] font-bold text-text-primary tracking-[-1px]">
+        <h2 className="font-mono text-[clamp(32px,8vw,51px)] font-bold text-text-primary tracking-[-1px]">
           Contact
         </h2>
         <div className="w-10 h-px bg-[#ccc] mx-auto mt-[18px]" />

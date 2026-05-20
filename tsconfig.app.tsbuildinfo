@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/customcursor.tsx","./src/components/navigation.tsx","./src/components/scrollprogress.tsx","./src/hooks/usescrollspy.ts","./src/sections/about.tsx","./src/sections/career.tsx","./src/sections/contact.tsx","./src/sections/hero.tsx","./src/sections/projects.tsx"],"version":"6.0.3"}

@@ -69,7 +69,7 @@ export default function Hero() {
     <section
       id="hero"
       ref={containerRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-bg cursor-none"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-bg cursor-none px-4"
     >
       {/* 颜色反转圆 - z=20，只影响英文和背景 */}
       <div
@@ -88,10 +88,10 @@ export default function Hero() {
           background: '#121212',
         }}
       >
-        <div className="font-fangsong text-[clamp(56px,11vw,96px)] font-semibold text-white tracking-[2px] leading-none mb-9 whitespace-nowrap">
+        <div className="font-fangsong text-[clamp(36px,11vw,96px)] font-semibold text-white tracking-[2px] leading-none mb-9 whitespace-nowrap">
           你好，我是 王
         </div>
-        <div className="font-fangsong text-[clamp(16px,2.5vw,22px)] text-[#bbb] tracking-[3px] whitespace-nowrap">
+        <div className="font-fangsong text-[clamp(14px,2.5vw,22px)] text-[#bbb] tracking-[3px] whitespace-nowrap">
           AI Agent 工程师 &nbsp;|&nbsp; 21岁 &nbsp;|&nbsp; 河南新乡
         </div>
       </div>
@@ -126,7 +126,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="font-mono text-[clamp(16px,2.5vw,22px)] text-text-muted tracking-[2px]"
+          className="font-mono text-[clamp(14px,2.5vw,22px)] text-text-muted tracking-[2px]"
         >
           AI Agent Engineer &nbsp;|&nbsp; 21岁 &nbsp;|&nbsp; 河南新乡
         </motion.div>

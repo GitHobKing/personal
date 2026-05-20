@@ -64,7 +64,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         className="bg-card-white border border-card-border rounded-md p-5 sm:p-8 cursor-pointer transition-shadow duration-300 hover:shadow-[0_12px_36px_rgba(0,0,0,0.08)]"
         style={{ transformStyle: 'preserve-3d', transition: 'transform 0.12s ease-out, box-shadow 0.3s' }}
       >
-        <h3 className="font-mono text-2xl font-bold text-text-primary tracking-[-0.5px] mb-2.5">
+        <h3 className="font-mono text-xl sm:text-2xl font-bold text-text-primary tracking-[-0.5px] mb-2.5">
           {project.name}
         </h3>
         <p className="font-fangsong text-base text-text-secondary leading-relaxed mb-4">
@@ -95,7 +95,7 @@ export default function Projects() {
         transition={{ duration: 0.5 }}
         className="text-center mb-12"
       >
-        <h2 className="font-mono text-[51px] font-bold text-text-primary tracking-[-1px]">
+        <h2 className="font-mono text-[clamp(32px,8vw,51px)] font-bold text-text-primary tracking-[-1px]">
           Projects
         </h2>
         <div className="w-10 h-px bg-[#ccc] mx-auto mt-[18px]" />
