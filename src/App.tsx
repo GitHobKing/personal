@@ -1,6 +1,7 @@
 import CustomCursor from './components/CustomCursor'
 import ScrollProgress from './components/ScrollProgress'
 import Navigation from './components/Navigation'
+import Hero from './sections/Hero'
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <CustomCursor />
       <ScrollProgress />
       <Navigation />
-      <h1 className="font-mono text-4xl text-text-primary p-20">Hello</h1>
+      <Hero />
     </main>
   )
 }
