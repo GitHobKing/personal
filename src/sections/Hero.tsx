@@ -90,10 +90,10 @@ export default function Hero() {
           zIndex: 25,
         }}
       >
-        <div className="font-fangsong text-[clamp(36px,11vw,96px)] font-semibold text-white tracking-[2px] leading-none mb-9 whitespace-nowrap">
+        <div className="font-display-cn text-[clamp(36px,11vw,96px)] font-bold text-white tracking-[4px] leading-none mb-9 whitespace-nowrap">
           你好，我是 王
         </div>
-        <div className="font-fangsong text-[clamp(14px,2.5vw,22px)] text-[#bbb] tracking-[3px] whitespace-nowrap">
+        <div className="font-display-cn text-[clamp(14px,2.5vw,22px)] text-[#bbb] tracking-[4px] whitespace-nowrap">
           AI Agent 工程师 &nbsp;|&nbsp; 21岁 &nbsp;|&nbsp; 河南新乡
         </div>
       </div>
@@ -115,10 +115,10 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mb-9"
         >
-          <span className="font-mono text-[clamp(56px,11vw,96px)] font-bold text-text-primary tracking-[-1.5px] leading-none">
+          <span className="font-display italic text-[clamp(52px,10vw,88px)] font-medium text-text-primary tracking-[-0.5px] leading-none">
             Hello, I'm&nbsp;
           </span>
-          <span className="font-mono text-[clamp(64px,12vw,108px)] font-bold text-text-primary tracking-[-1.5px] leading-none">
+          <span className="font-display text-[clamp(68px,13vw,120px)] font-bold text-text-primary tracking-[-1px] leading-none">
             WANG
           </span>
         </motion.div>

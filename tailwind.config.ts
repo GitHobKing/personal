@@ -7,6 +7,8 @@ export default {
       fontFamily: {
         mono: ['Consolas', 'Courier New', 'monospace'],
         fangsong: ['FangSong', '仿宋', 'STFangsong', 'serif'],
+        display: ['Playfair Display', 'Georgia', 'Times New Roman', 'serif'],
+        'display-cn': ['Noto Serif SC', 'STSong', 'SimSun', 'serif'],
       },
       colors: {
         bg: '#f9f9f7',
